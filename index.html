@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>马来语答辩速成平台</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">BM</div>
+          <div>
+            <p class="eyebrow">Bahasa Melayu Coach</p>
+            <h1>马来语答辩速成平台</h1>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button class="quiet-button" id="backupButton" type="button">导出备份</button>
+          <button class="primary-button" id="studyNowButton" type="button">开始今日学习</button>
+        </div>
+      </header>
+
+      <section class="status-strip" id="statusStrip" aria-label="学习状态"></section>
+
+      <nav class="main-tabs" aria-label="主要功能">
+        <button class="tab-button active" type="button" data-view="today">今日</button>
+        <button class="tab-button" type="button" data-view="review">复习</button>
+        <button class="tab-button" type="button" data-view="phrases">句库</button>
+        <button class="tab-button" type="button" data-view="resources">资源</button>
+        <button class="tab-button" type="button" data-view="settings">设置</button>
+      </nav>
+
+      <main id="app" class="view-root" tabindex="-1"></main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.loader.js"></script>
+  </body>
+</html>
